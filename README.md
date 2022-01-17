@@ -2,6 +2,8 @@
  VS Studio plugins 
  - typescript
  - Code Runner
+
+ Page Object Model (POM) design pattern implemented
  
  environment init
  npm init -y

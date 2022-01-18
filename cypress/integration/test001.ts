@@ -1,6 +1,6 @@
 import { times } from "cypress/types/lodash"
 
-it('google test', function(){
+it('google test', ()=>{
     cy.visit('https://google.com')
     cy.get('[name="q"]')
         .type('automation step')

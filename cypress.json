@@ -1,1 +1,11 @@
-{}
+{
+    "waitForFileChanges": true,
+    "reporter": "mocawesome",
+    "reporterOptions":{
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+    }
+}

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-01-19T01:09:58.335Z",
-    "end": "2022-01-19T01:10:07.517Z",
-    "duration": 9182,
+    "start": "2022-01-19T01:28:30.629Z",
+    "end": "2022-01-19T01:28:38.421Z",
+    "duration": 7792,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,10 +18,10 @@
   },
   "results": [
     {
-      "uuid": "4e87159d-d198-481a-900d-c7708d0fb297",
+      "uuid": "94a03f5e-e034-47e0-9ecc-5dd7f7c313ae",
       "title": "",
-      "fullFile": "cypress/integration/test002.ts",
-      "file": "cypress/integration/test002.ts",
+      "fullFile": "cypress/integration/test002 - копия (3).ts",
+      "file": "cypress/integration/test002 - копия (3).ts",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [
@@ -29,7 +29,7 @@
           "title": "page objects model test",
           "fullTitle": "page objects model test",
           "timedOut": null,
-          "duration": 3464,
+          "duration": 3077,
           "state": "passed",
           "speed": "fast",
           "pass": true,
@@ -38,20 +38,20 @@
           "context": null,
           "code": "loginPage.navigate(loginPage.loginPage_url_locator);\nloginPage.enterUserName('test');\nloginPage.enterPassword('test');\nloginPage.clickLogin();\ncy.get('h2', { timeout: 5000 }).should('contain', 'Login Successful :)');",
           "err": {},
-          "uuid": "1efc7796-6e8d-4151-a538-0b075179e1fe",
-          "parentUUID": "4e87159d-d198-481a-900d-c7708d0fb297",
+          "uuid": "a54a87b9-5294-4a86-84e2-52da43b1219d",
+          "parentUUID": "94a03f5e-e034-47e0-9ecc-5dd7f7c313ae",
           "isHook": false,
           "skipped": false
         }
       ],
       "suites": [],
       "passes": [
-        "1efc7796-6e8d-4151-a538-0b075179e1fe"
+        "a54a87b9-5294-4a86-84e2-52da43b1219d"
       ],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 3464,
+      "duration": 3077,
       "root": true,
       "rootEmpty": false,
       "_timeout": 2000

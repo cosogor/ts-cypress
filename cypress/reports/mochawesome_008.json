@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-01-19T00:30:37.955Z",
-    "end": "2022-01-19T00:30:51.326Z",
-    "duration": 13371,
+    "start": "2022-01-19T01:26:40.846Z",
+    "end": "2022-01-19T01:26:52.666Z",
+    "duration": 11820,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,10 +18,10 @@
   },
   "results": [
     {
-      "uuid": "d4cf014e-7482-4a27-b2d1-e34fbd9747da",
+      "uuid": "ed27f471-bffa-4ff3-8d00-c401572a159e",
       "title": "",
-      "fullFile": "cypress/integration/test001.ts",
-      "file": "cypress/integration/test001.ts",
+      "fullFile": "cypress/integration/test001 - копия (4).ts",
+      "file": "cypress/integration/test001 - копия (4).ts",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [
@@ -29,7 +29,7 @@
           "title": "assertions",
           "fullTitle": "assertions",
           "timedOut": null,
-          "duration": 6182,
+          "duration": 5250,
           "state": "passed",
           "speed": "medium",
           "pass": true,
@@ -38,20 +38,20 @@
           "context": null,
           "code": "cy.visit('https://example.cypress.io');\ncy.contains('get').click();\n// implicit asserts from cypress\ncy.get('#query-btn', { timeout: 5000 })\n    // should contain\n    .should('contain', 'Button')\n    .should('contain.text', 'Button')\n    // should have\n    .should('have.class', 'query-btn btn btn-primary')\n    .should('have.id', 'query-btn')\n    // should be\n    .should('be.visible')\n    .should('be.enabled')\n    .should('not.be.focused');\n//should equal\ncy.get('#query-btn').invoke('attr', 'id')\n    .should('equal', 'query-btn');\n// and for chained assertions\ncy.get('#query-btn', { timeout: 5000 })\n    .should('contain', 'Button')\n    .and('contain.text', 'Button');\n//explicit assertions from chai\n//expect\nexpect(true).to.be.true;\nlet name = 123;\nexpect(name).to.be.eqls(123);\n//assert from chai\nassert.equal(123, 123, 'Not stricly equal');\nassert.notEqual(123, 1234, 'Not stricly equal');\nassert.strictEqual(123, 123, 'Not stricly equal');\nassert.isAbove(123, 12);\nassert.isBelow(12, 123);\nassert.isAbove(123, 12);\nassert.exists(123, 'Target neither null nor defined');\nassert.notExists(null, 'Target neither null nor defined');\nassert.isTrue(true);\nassert.isFalse(false);\nassert.isString('123');\nassert.isNotString(123);\nassert.isNumber(123);\nassert.isNotNumber('123');",
           "err": {},
-          "uuid": "dd236625-9868-454a-8d1e-1b82784ee931",
-          "parentUUID": "d4cf014e-7482-4a27-b2d1-e34fbd9747da",
+          "uuid": "055a4d6d-402b-4168-9f7b-de246d622765",
+          "parentUUID": "ed27f471-bffa-4ff3-8d00-c401572a159e",
           "isHook": false,
           "skipped": false
         }
       ],
       "suites": [],
       "passes": [
-        "dd236625-9868-454a-8d1e-1b82784ee931"
+        "055a4d6d-402b-4168-9f7b-de246d622765"
       ],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 6182,
+      "duration": 5250,
       "root": true,
       "rootEmpty": false,
       "_timeout": 2000

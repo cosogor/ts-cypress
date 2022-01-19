@@ -39,3 +39,25 @@ in package.json scripts
 pretest
 test
 posttest
+    "pretest": "rimraf -r ./cypress/*.json", // = "rm -r ./cypress/*.json" // delete old report file
+    "test": "npm run cypress-test || npm run posttest", //  run tests || = independently of resilts of previous command
+    "cypress-test": "cypress run --reporter mochawesome", // run cypress  with reporter mpchawesome
+    "posttest": "npm run merge-reports && npm run generate-html-reports", // merge json reports  and generate html report
+    "merge-reports": "mochawesome-merge cypress/reports/*.json  -encoding ascii > output.json", // generate html report
+    "generate-html-reports": "marge output.json --reportDir cypress/reports"
+How to run:
+npm run test // for perform all scripts
+npm run merge-reports // for rerun merge reports
+npm run generate-html-reports // rerun html report generation
+
+{
+    "waitForFileChanges": true, // rerun tests after testfila change
+    "reporter": "mocawesome", // using reporter mocawesome
+    "reporterOptions":{
+        "charts": true,
+        "overwrite": false,
+        "html": false,  // do not generate html to future json merge
+        "json": true,   // but generate json to future json merge
+        "reportDir": "cypress/reports" // report dir to json files
+    }
+}

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-01-19T01:09:58.335Z",
-    "end": "2022-01-19T01:10:07.517Z",
-    "duration": 9182,
+    "start": "2022-01-19T01:36:02.859Z",
+    "end": "2022-01-19T01:36:12.385Z",
+    "duration": 9526,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,10 +18,10 @@
   },
   "results": [
     {
-      "uuid": "4e87159d-d198-481a-900d-c7708d0fb297",
+      "uuid": "cb3687cf-f20f-438b-9f5c-5a8e6902c79b",
       "title": "",
-      "fullFile": "cypress/integration/test002.ts",
-      "file": "cypress/integration/test002.ts",
+      "fullFile": "cypress/integration/test002x (4).ts",
+      "file": "cypress/integration/test002x (4).ts",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [
@@ -29,7 +29,7 @@
           "title": "page objects model test",
           "fullTitle": "page objects model test",
           "timedOut": null,
-          "duration": 3464,
+          "duration": 4085,
           "state": "passed",
           "speed": "fast",
           "pass": true,
@@ -38,20 +38,20 @@
           "context": null,
           "code": "loginPage.navigate(loginPage.loginPage_url_locator);\nloginPage.enterUserName('test');\nloginPage.enterPassword('test');\nloginPage.clickLogin();\ncy.get('h2', { timeout: 5000 }).should('contain', 'Login Successful :)');",
           "err": {},
-          "uuid": "1efc7796-6e8d-4151-a538-0b075179e1fe",
-          "parentUUID": "4e87159d-d198-481a-900d-c7708d0fb297",
+          "uuid": "0ed6356e-afa5-466d-9d49-63741d2f54fd",
+          "parentUUID": "cb3687cf-f20f-438b-9f5c-5a8e6902c79b",
           "isHook": false,
           "skipped": false
         }
       ],
       "suites": [],
       "passes": [
-        "1efc7796-6e8d-4151-a538-0b075179e1fe"
+        "0ed6356e-afa5-466d-9d49-63741d2f54fd"
       ],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 3464,
+      "duration": 4085,
       "root": true,
       "rootEmpty": false,
       "_timeout": 2000

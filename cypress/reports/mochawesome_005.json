@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-01-19T00:01:51.281Z",
-    "end": "2022-01-19T00:02:01.891Z",
-    "duration": 10610,
+    "start": "2022-01-19T01:15:30.648Z",
+    "end": "2022-01-19T01:15:39.659Z",
+    "duration": 9011,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4b648a44-204c-417c-aed3-1882e9a04df7",
+      "uuid": "54dba312-1274-42dd-9de1-ed6ef415c4c0",
       "title": "",
       "fullFile": "cypress/integration/test002.ts",
       "file": "cypress/integration/test002.ts",
@@ -29,7 +29,7 @@
           "title": "page objects model test",
           "fullTitle": "page objects model test",
           "timedOut": null,
-          "duration": 3683,
+          "duration": 3424,
           "state": "passed",
           "speed": "fast",
           "pass": true,
@@ -38,20 +38,20 @@
           "context": null,
           "code": "loginPage.navigate(loginPage.loginPage_url_locator);\nloginPage.enterUserName('test');\nloginPage.enterPassword('test');\nloginPage.clickLogin();\ncy.get('h2', { timeout: 5000 }).should('contain', 'Login Successful :)');",
           "err": {},
-          "uuid": "bdedcde1-3083-45a6-bb4f-a09ff42ce83b",
-          "parentUUID": "4b648a44-204c-417c-aed3-1882e9a04df7",
+          "uuid": "fc65b602-3abc-4f5c-825f-8dafba316365",
+          "parentUUID": "54dba312-1274-42dd-9de1-ed6ef415c4c0",
           "isHook": false,
           "skipped": false
         }
       ],
       "suites": [],
       "passes": [
-        "bdedcde1-3083-45a6-bb4f-a09ff42ce83b"
+        "fc65b602-3abc-4f5c-825f-8dafba316365"
       ],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 3683,
+      "duration": 3424,
       "root": true,
       "rootEmpty": false,
       "_timeout": 2000

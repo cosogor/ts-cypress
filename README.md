@@ -13,7 +13,7 @@
  npx tsc --init --types cypress --lib dom,es6
  npx cypress open
 npm install --save-dev mocha mochawesome mochawesome-merge mochawesome-report-generator
-
+npm install mochawesome-merge --save-dev
  npm install mochawesome
  npm install mochawesome-report-generator
  npm install mochawesome-merge
@@ -24,8 +24,11 @@ npm install --save-dev mocha mochawesome mochawesome-merge mochawesome-report-ge
  bad command can generate Unexpected token � in JSON at position 0
  //npx mochawesome-merge cypress/reports/*.json ＞ cypress/output.json
 
-good command
+good command but do not whant work from windows console
 npx mochawesome-merge cypress/reports/*.json | out-file -encoding ascii cypress/output.json
+
+best command
+npx mochawesome-merge cypress/reports/*.json  -encoding ascii > output.json
 
 Step 6 - Run command to generate html report
 //npx marge cypress/report/output.json --reportDir ./ --inline

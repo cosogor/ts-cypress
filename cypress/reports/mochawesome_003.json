@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-01-18T23:58:42.322Z",
+    "end": "2022-01-18T23:58:51.117Z",
+    "duration": 8795,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "770573c5-e55f-4cc0-b7a1-58cb2c26a497",
+      "title": "",
+      "fullFile": "cypress/integration/test002.ts",
+      "file": "cypress/integration/test002.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "page objects model test",
+          "fullTitle": "page objects model test",
+          "timedOut": null,
+          "duration": 3337,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.navigate(loginPage.loginPage_url_locator);\nloginPage.enterUserName('test');\nloginPage.enterPassword('test');\nloginPage.clickLogin();\ncy.get('h2', { timeout: 5000 }).should('contain', 'Login Successful :)');",
+          "err": {},
+          "uuid": "19e01aa4-c904-4218-bed1-ab1807d6e420",
+          "parentUUID": "770573c5-e55f-4cc0-b7a1-58cb2c26a497",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "19e01aa4-c904-4218-bed1-ab1807d6e420"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 3337,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.0.1"
+    }
+  }
+}

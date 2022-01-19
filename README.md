@@ -22,13 +22,13 @@
      npx cypress run --help // run with parameters
      npx cypress run --reporter mochawesome
 
- ## bad merge command can generate Unexpected token � in JSON at position 0
+## Bad merge command can generate Unexpected token � in JSON at position 0
      npx mochawesome-merge cypress/reports/*.json ＞ cypress/output.json
 
-## good merge command but do not works from windows console (error occures)
+## Good merge command but do not works from windows console (error occures)
     npx mochawesome-merge cypress/reports/*.json | out-file -encoding ascii cypress/output.json
 
-## best merge command works from windows console 
+## Best merge command works from windows console 
     npx mochawesome-merge cypress/reports/*.json  -encoding ascii > output.json
 
 ## Run command to generate html report
